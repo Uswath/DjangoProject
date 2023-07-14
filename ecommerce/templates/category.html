@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <img src="{% static 'image/banner.jpg' %}" height="400px" width="100%">
+</div>
+
+<div style="margin-bottom:100px; ">
+    <h1 class="text-center">Our Collections</h1>
+    <center><p class="text-justify">Online Shopping India - Online Shopping Site for Men, Women, and Kids. Buy Apparel, Footwear, Bags, Fashion Accessories and more on Lifestyle Stores ✓ Easy store in the heart of downtown that offers chic and stylish clothing for both men and women.</p></center>
+</div>
+<div class="container" style="margin-bottom:100px;">
+<div class="row mx-auto">
+    {% for i in c %}
+    <div class="col-sm-3">
+        <div class="card" style="width: 20rem;">
+            <img src="{{i.image.url}}" style="height:250px;width:100%;" class="card-img-top" alt="{{i.name}}">
+            <div class="card-body">
+                <h5 class="card-title title-heading">{{i.name}}</h5>
+                <a href="{% url 'shop:allproducts' i.slug %}" class="btn btn-primary link">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+</div>
+
+{% endblock %}

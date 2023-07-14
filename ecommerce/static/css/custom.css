@@ -1,0 +1,40 @@
+body
+{
+font-family: 'Roboto', sans-serif;
+background-color:rgb(230, 255, 255);
+}
+.navbar-light .navbar-nav .nav-link,.navbar-light,.navbar-light .navbar-brand
+{
+color:rgb(7,47,112);
+font-weight:bold;
+}
+.footer
+{
+position:fixed;
+left:0;
+bottom:0;
+width:1510px;
+height:60px;
+text-align:center;
+background-color:rgb(160,168,173);
+}
+.text-padding
+{
+padding-bottom:20px;
+}
+.custom_icon
+{
+margin :7px;
+font-size:20px;
+}
+h5
+{
+font-weight:bold;
+font-size:25px;
+text-align:center;
+}
+.link
+{
+position:relative;
+left:32%;
+}
